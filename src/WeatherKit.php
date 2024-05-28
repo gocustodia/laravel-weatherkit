@@ -1,13 +1,13 @@
 <?php
-namespace Rich2k\LaravelWeatherKit;
+namespace CustodiaFork\LaravelWeatherKit;
 
 use Carbon\Carbon;
 use Illuminate\Support\Collection;
-use Rich2k\LaravelWeatherKit\Exceptions\DataSetNotFoundException;
-use Rich2k\LaravelWeatherKit\Exceptions\LaravelWeatherKitException;
-use Rich2k\LaravelWeatherKit\Exceptions\KeyNotFoundExceptione;
-use Rich2k\LaravelWeatherKit\Exceptions\MissingCoordinatesException;
-use Rich2k\LaravelWeatherKit\Exceptions\TokenGenerationFailedException;
+use CustodiaFork\LaravelWeatherKit\Exceptions\DataSetNotFoundException;
+use CustodiaFork\LaravelWeatherKit\Exceptions\LaravelWeatherKitException;
+use CustodiaFork\LaravelWeatherKit\Exceptions\KeyNotFoundExceptione;
+use CustodiaFork\LaravelWeatherKit\Exceptions\MissingCoordinatesException;
+use CustodiaFork\LaravelWeatherKit\Exceptions\TokenGenerationFailedException;
 
 class WeatherKit
 {

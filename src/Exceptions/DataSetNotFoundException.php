@@ -1,10 +1,10 @@
 <?php
-namespace Rich2k\LaravelWeatherKit\Exceptions;
+namespace CustodiaFork\LaravelWeatherKit\Exceptions;
 
 /**
  * Class DataSetNotFoundException
  *
- * @package Rich2k\LaravelWeatherKit\Exceptions
+ * @package CustodiaFork\LaravelWeatherKit\Exceptions
  */
 class DataSetNotFoundException extends LaravelWeatherKitException
 {

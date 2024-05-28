@@ -1,10 +1,10 @@
 <?php
-namespace Rich2k\LaravelWeatherKit\Exceptions;
+namespace CustodiaFork\LaravelWeatherKit\Exceptions;
 
 /**
  * Class MissingCoordinatesException
  *
- * @package Rich2k\LaravelWeatherKit\Exceptions
+ * @package CustodiaFork\LaravelWeatherKit\Exceptions
  */
 class MissingCoordinatesException extends LaravelWeatherKitException
 {
