@@ -1,10 +1,10 @@
 <?php
-namespace Rich2k\LaravelWeatherKit\Exceptions;
+namespace CustodiaFork\LaravelWeatherKit\Exceptions;
 
 /**
  * TokenGenerationFailedException.
  *
- * @package Rich2k\LaravelWeatherKit\Exceptions
+ * @package CustodiaFork\LaravelWeatherKit\Exceptions
  */
 class TokenGenerationFailedException extends LaravelWeatherKitException
 {

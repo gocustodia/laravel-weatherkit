@@ -1,6 +1,6 @@
 <?php
 
-namespace Rich2k\LaravelWeatherKit\Providers;
+namespace CustodiaFork\LaravelWeatherKit\Providers;
 
 use Illuminate\Support\Collection;
 use Illuminate\Support\ServiceProvider;

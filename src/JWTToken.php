@@ -1,17 +1,17 @@
 <?php
-namespace Rich2k\LaravelWeatherKit;
+namespace CustodiaFork\LaravelWeatherKit;
 
 use Firebase\JWT\JWT;
 use Illuminate\Support\Facades\Storage;
-use Rich2k\LaravelWeatherKit\Exceptions\KeyDecodingException;
-use Rich2k\LaravelWeatherKit\Exceptions\KeyFileMissingException;
-use Rich2k\LaravelWeatherKit\Exceptions\TokenGenerationFailedException;
+use CustodiaFork\LaravelWeatherKit\Exceptions\KeyDecodingException;
+use CustodiaFork\LaravelWeatherKit\Exceptions\KeyFileMissingException;
+use CustodiaFork\LaravelWeatherKit\Exceptions\TokenGenerationFailedException;
 use Throwable;
 
 /**
  * JWTToken
  *
- * @package Rich2k\LaravelWeatherKit
+ * @package CustodiaFork\LaravelWeatherKit
  */
 class JWTToken
 {
