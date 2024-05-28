@@ -1,6 +1,8 @@
 # Laravel WeatherKit
 
 This provides a Laravel style wrapper for Apple's WeatherKit api, which replaced the DarkSky API.
+This API is forked from `rich2k/laravel-weatherkit`. 
+The purpose of this fork is to upgrade its feature to support Laravel 11
 
 For more information see https://developer.apple.com/weatherkit/get-started/
 
@@ -11,7 +13,7 @@ Please note, Apple requires attribution to use this API in your code https://dev
 Require this package with composer using the following command:
 
 ``` bash
-$ composer require rich2k/laravel-weatherkit
+$ composer require gocustodia/laravel-weatherkit
 ```
 
 ### Providers
@@ -22,7 +24,7 @@ You can, of course, add it manually to your `providers` array in `config/app.php
 
 ```php
 'providers' => [
-    Rich2k\LaravelWeatherKit\Providers\LaravelServiceProvider::class,
+    CustodiaFork\LaravelWeatherKit\Providers\LaravelServiceProvider::class,
 ]
 ```
 
@@ -32,7 +34,7 @@ To register a facade accessor, add the following to `config/app.php` `aliases` a
 
 ```php
 'aliases' => [
-    'WeatherKit' => Rich2k\LaravelWeatherKit\Facades\WeatherKit::class,
+    'WeatherKit' => CustodiaFork\LaravelWeatherKit\Facades\WeatherKit::class,
 ]
 ```
 
@@ -58,7 +60,7 @@ See [Authentication](#Authentication) section on how to use these environment va
 If you wish to change the default configuration, you can publish the configuration file to your project.
 
 ```bash
-$ php artisan vendor:publish --provider=\Rich2k\LaravelWeatherKit\Providers\LaravelServiceProvider
+$ php artisan vendor:publish --provider=\CustodiaFork\LaravelWeatherKit\Providers\LaravelServiceProvider
 ```
 
 ## Authentication
@@ -212,7 +214,7 @@ WeatherKit::location(lat, lon)->dataSets(['currentWeather', 'forecastDaily'])->w
 
 // OR
 
-$weather = new \Rich2k\LaravelWeatherKit\WeatherKit();
+$weather = new \CustodiaFork\LaravelWeatherKit\WeatherKit();
 $weather->location(lat, lon)->availability();
 $weather->location(lat, lon)->weather();
 ```
